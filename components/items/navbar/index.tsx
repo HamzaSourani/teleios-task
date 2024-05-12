@@ -46,11 +46,11 @@ const NavBar = () => {
           width={160}
           height={160}
         />
-        <ul className="hidden  md:flex text-foreground ">
+        <ul className="hidden font-syncopate font-semibold text-xs md:flex text-foreground ">
           {MENU_ITEMS.map((item) => (
             <li
               key={item}
-              className=" capitalize [&:not(:last-of-type)]:after:content-['/'] after:px-2  "
+              className=" uppercase [&:not(:last-of-type)]:after:content-['/'] after:px-2  "
             >
               <Link href={""} className="hover:text-primary transition-colors">
                 {item}
