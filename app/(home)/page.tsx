@@ -1,3 +1,5 @@
+import Experience from "@/components/items/experience";
+import Container from "@/components/ui/container";
 import React from "react";
 
 export default function HomePage() {
@@ -17,6 +19,9 @@ export default function HomePage() {
           type="video/mp4"
         />
       </video>
+      <Container>
+        <Experience />
+      </Container>
     </div>
   );
 }
