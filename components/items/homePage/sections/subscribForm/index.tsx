@@ -130,7 +130,7 @@ const SubscribeForm = () => {
               />
             </div>
             <p>What are you interested in?</p>
-            <div className="flex gap-4">
+            <div className=" grid grid-cols-2 md:grid-cols-4 gap-4">
               <FormField
                 control={form.control}
                 name="watchParty"

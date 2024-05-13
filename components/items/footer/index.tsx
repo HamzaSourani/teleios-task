@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col justify-between gap-8 border-t border-border  px-6 py-8 shadow-negative md:flex-row md:gap-16  md:px-12  md:py-16 ">
       <Link href={"/"} className="">
-        <div className="flex flex-col gap-8  ">
+        <div className="flex md:flex-col gap-8  ">
           <Image
             src={"/assets/images/logo3.png"}
             width={100}
