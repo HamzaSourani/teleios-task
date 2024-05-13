@@ -2,6 +2,7 @@
 import Image from "next/image";
 import AppImage from "../../../appImage";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const MainSection = () => {
   return (
@@ -16,7 +17,12 @@ const MainSection = () => {
         />
         <span>teleios dome experience</span>
       </p>
-      <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+      <motion.div
+        initial={{ x: "-30vw" }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 1 }}
+        className="grid grid-cols-1 items-center md:grid-cols-2 gap-8 md:gap-12 lg:gap-16"
+      >
         <AppImage src="/assets/images/main-section.jpg" />
         <div className="flex flex-col gap-4 md:gap-6">
           <p className="section-header">A WORLD FIRST EXPERIENCE</p>
@@ -30,7 +36,7 @@ const MainSection = () => {
           </p>
           <Button>find out more</Button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
