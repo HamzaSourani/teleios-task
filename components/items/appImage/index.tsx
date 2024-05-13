@@ -3,7 +3,8 @@ import Image from "next/image";
 import Atropos from "atropos/react";
 import "atropos/css";
 import { AppImageProps } from "./type";
-const AppImage = ({ src }: AppImageProps) => {
+import { cn } from "@/lib/utils";
+const AppImage = ({ src, direction = "normal" }: AppImageProps) => {
   return (
     <Atropos
       shadow={false}
@@ -13,7 +14,12 @@ const AppImage = ({ src }: AppImageProps) => {
       shadowScale={0}
       className="  relative w-[700px] h-[525px]"
     >
-      <div className="absolute h-full top-5 left-0">
+      <div
+        className={cn(
+          "absolute h-full top-5 ",
+          direction == "normal" ? "left-0" : "right-0"
+        )}
+      >
         <svg
           className=" fill-primary h-[70%] "
           viewBox="0 0 259 377"
@@ -29,7 +35,10 @@ const AppImage = ({ src }: AppImageProps) => {
       <div className="w-full h-full">
         <Image
           src={src}
-          className="image-clip w-full h-full object-cover"
+          className={cn(
+            " w-full h-full object-cover",
+            direction == "normal" ? "image-clip" : "image-clip-revert"
+          )}
           width={600}
           height={337}
           alt=""
