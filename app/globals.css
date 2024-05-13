@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 239 4% 11%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 38 70% 45%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 256 88% 64%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 176 100% 40.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.section-header {
+  @apply uppercase font-syncopate  text-secondary  font-semibold text-xl leading-6 sm:text-2xl sm:leading-7 md:text-3xl md:leading-8 lg:text-4xl lg:leading-10;
+}
+.image-clip {
+  clip-path: polygon(1% 91%, 1% 9%, 100% 0, 100% 98%);
+}
+.image-clip-revert {
+  clip-path: polygon(0 1%, 98% 6%, 98% 92%, 0% 100%);
+}
+.food-section-clip {
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
+}
