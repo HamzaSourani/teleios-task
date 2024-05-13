@@ -36,7 +36,7 @@ const BOOK_ITEMS = [
 ];
 const NavBar = () => {
   return (
-    <header className="bg-background/80 fixed top-0  shadow-sm left-0  p-4 w-screen">
+    <header className="bg-background/80 fixed top-0  shadow-sm left-0  p-4 px-8 w-screen">
       <nav className="flex justify-between  items-center">
         <Image
           src="/assets/images/logo.png"

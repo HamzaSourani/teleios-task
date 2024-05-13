@@ -3,8 +3,8 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="my-12 flex items-center flex-col gap-10 md:gap-x-16 lg:gap-20">
-      <h1 className="flex gap-2 items-center uppercase font-syncopate  font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl">
+    <section className="my-12 flex items-center flex-col gap-10 md:gap-x-16 lg:gap-20">
+      <p className="section-header flex gap-2 items-center ">
         <Image
           src={"/assets/images/logo2.png"}
           alt="teleios"
@@ -13,7 +13,7 @@ const Experience = () => {
           height={160}
         />
         teleios dome experience
-      </h1>
+      </p>
       <p className="text-justify md:text-center text-sm md:text-lg lg:text-xl">
         You eat, you drink, you race, you earn. From Rookie to Elite, you can
         choose your skill level, meaning that even the absolute beginner can go
@@ -22,7 +22,7 @@ const Experience = () => {
         driver&apos;s seat & experience the thrill of social gaming. Are you
         ready to get in the fast lane?
       </p>
-    </div>
+    </section>
   );
 };
 
