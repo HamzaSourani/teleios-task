@@ -104,7 +104,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="flex  flex-col">
-        <div className=" w-full md:w-[400px] lg:w-[500px]">
+        <div className=" w-full z-0 md:w-[400px] lg:w-[500px]">
           <MapContainer
             className="aspect-video h-full w-full"
             center={[25.032865745772696, 55.188939409433495]}
