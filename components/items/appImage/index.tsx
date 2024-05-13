@@ -12,7 +12,7 @@ const AppImage = ({ src, direction = "normal" }: AppImageProps) => {
       rotateXMax={7}
       rotateYMax={7}
       shadowScale={0}
-      className="  relative w-[700px] h-[525px]"
+      className="  relative "
     >
       <div
         className={cn(
@@ -36,7 +36,7 @@ const AppImage = ({ src, direction = "normal" }: AppImageProps) => {
         <Image
           src={src}
           className={cn(
-            " w-full h-full object-cover",
+            " w-full h-full aspect-[4/3] object-cover",
             direction == "normal" ? "image-clip" : "image-clip-revert"
           )}
           width={600}
