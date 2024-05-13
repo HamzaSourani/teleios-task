@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const MainSection = () => {
   return (
     <section className="my-12 flex items-center flex-col gap-10 md:gap-x-16 lg:gap-20">
-      <p className="section-header flex gap-2 items-center ">
+      <p className=" section-header  !text-white flex gap-2 items-center ">
         <Image
           src={"/assets/images/logo2.png"}
           alt="teleios"

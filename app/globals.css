@@ -45,7 +45,7 @@
   }
 }
 .section-header {
-  @apply uppercase font-syncopate   font-semibold text-xl leading-6 sm:text-2xl sm:leading-7 md:text-3xl md:leading-8 lg:text-4xl lg:leading-10;
+  @apply uppercase font-syncopate  text-secondary  font-semibold text-xl leading-6 sm:text-2xl sm:leading-7 md:text-3xl md:leading-8 lg:text-4xl lg:leading-10;
 }
 .image-clip {
   clip-path: polygon(1% 91%, 1% 9%, 100% 0, 100% 98%);

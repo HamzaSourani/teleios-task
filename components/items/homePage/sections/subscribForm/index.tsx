@@ -86,7 +86,7 @@ const SubscribeForm = () => {
   return (
     <div className="bg-secondary/10 min-h-[60vh]   ">
       <Container className=" flex gap-4 flex-col items-center py-20">
-        <p className="section-header">Be the first to know.</p>
+        <p className="section-header !text-white">Be the first to know.</p>
         <p>
           Early access to bookings, exciting Teleios events, Grand Prix watch
           parties, and new releases.

@@ -42,7 +42,7 @@ const Footer = () => {
       </Link>
       <div className=" flex gap-16">
         <div>
-          <p className="mb-6 text-xl font-semibold capitalize text-primary">
+          <p className="mb-6 text-xl font-semibold capitalize text-secondary">
             Links
           </p>
           <ul className="flex flex-col justify-center gap-2">
@@ -58,7 +58,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <p className="mb-6 text-xl font-semibold capitalize text-primary">
+          <p className="mb-6 text-xl font-semibold capitalize text-secondary">
             Contacts{" "}
           </p>
           <ul className="flex flex-col justify-center  gap-2">
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <p className="mb-6 text-xl font-semibold capitalize text-primary">
+        <p className="mb-6 text-xl font-semibold capitalize text-secondary">
           social media
         </p>
         <ul className="mb-2 flex gap-2">
@@ -124,7 +124,7 @@ const Footer = () => {
           </MapContainer>
         </div>
         <div className="pt-4">
-          <p className="mb-6 text-xl font-semibold capitalize text-primary">
+          <p className="mb-6 text-xl font-semibold capitalize text-secondary">
             locations
           </p>
           <p className="font-semibold  ">UAE,Dubai, Production city</p>
