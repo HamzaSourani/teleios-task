@@ -21,7 +21,7 @@ const AppImage = ({ src, direction = "normal" }: AppImageProps) => {
           direction == "normal" ? "left-0" : "right-0"
         )}
       >
-        <Fragment className=" fill-primary h-[70%] " />
+        <Fragment className=" fill-secondary h-[70%] " />
       </div>
       <div className="w-full h-full">
         <Image
