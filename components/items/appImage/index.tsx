@@ -4,7 +4,7 @@ import Atropos from "atropos/react";
 import "atropos/css";
 import { AppImageProps } from "./type";
 import { cn } from "@/lib/utils";
-import Fragment from "../svg";
+import { Fragment } from "../svg";
 const AppImage = ({ src, direction = "normal" }: AppImageProps) => {
   return (
     <Atropos

@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/items/navbar";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/items/footer";
 
 const titillium = Titillium_Web({
   weight: ["200", "300", "400", "600", "700", "900"],
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <NavBar />
         <main>{children}</main>
+        <Footer />
         <Toaster />
       </body>
     </html>

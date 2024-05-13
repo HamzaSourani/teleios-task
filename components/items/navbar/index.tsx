@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -13,23 +12,11 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { MenuIcon, XIcon } from "lucide-react";
+import { NAV_MENU_ITEMS } from "@/constants";
 
-import { Button } from "@/components/ui/button";
-const MENU_ITEMS = [
-  "experience",
-  "dome",
-  "simulator",
-  "event",
-  "F&Q",
-  "contact us",
-];
 const BOOK_ITEMS = [
   { label: "dubai", href: "" },
   { label: "sharjah", href: "" },
@@ -47,7 +34,7 @@ const NavBar = () => {
           height={160}
         />
         <ul className="hidden font-syncopate font-semibold text-xs md:flex text-foreground ">
-          {MENU_ITEMS.map((item) => (
+          {NAV_MENU_ITEMS.map((item) => (
             <li
               key={item}
               className=" uppercase [&:not(:last-of-type)]:after:content-['/'] after:px-2  "
@@ -93,7 +80,7 @@ const NavBar = () => {
                 </DrawerClose>
               </div>
               <ul className="flex flex-col  p-4 gap-4 text-foreground ">
-                {MENU_ITEMS.map((item) => (
+                {NAV_MENU_ITEMS.map((item) => (
                   <li
                     key={item}
                     className=" capitalize [&:not(:last-child)]:border-b border-primary pb-2  "

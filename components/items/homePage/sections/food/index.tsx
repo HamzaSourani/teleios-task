@@ -1,4 +1,4 @@
-import Fragment from "@/components/items/svg";
+import { Fragment } from "@/components/items/svg";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
 
