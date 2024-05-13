@@ -26,12 +26,14 @@ const Footer = () => {
         <div className="flex md:flex-col gap-8  ">
           <Image
             src={"/assets/images/logo3.png"}
+            className="hover:scale-105 transition-transform"
             width={100}
             height={100}
             alt="teleios"
           />
           <Image
             src={"/assets/images/esaad.png"}
+            className="hover:scale-105 transition-transform"
             width={100}
             height={100}
             alt="essad"
@@ -40,28 +42,32 @@ const Footer = () => {
       </Link>
       <div className=" flex gap-16">
         <div>
-          <p className="mb-6 text-xl font-semibold capitalize text-gray-400">
+          <p className="mb-6 text-xl font-semibold capitalize text-primary">
             Links
           </p>
           <ul className="flex flex-col justify-center gap-2">
             {FOOTER_NAV_ITEMS.map((navLink) => (
               <li key={navLink}>
                 <Link href={navLink}>
-                  <p className=" font-semibold capitalize">{navLink}</p>
+                  <p className=" font-semibold hover:text-primary transition-colors capitalize">
+                    {navLink}
+                  </p>
                 </Link>
               </li>
             ))}
           </ul>
         </div>
         <div>
-          <p className="mb-6 text-xl font-semibold capitalize text-gray-400">
+          <p className="mb-6 text-xl font-semibold capitalize text-primary">
             Contacts{" "}
           </p>
-          <ul className="flex flex-col justify-center gap-2">
+          <ul className="flex flex-col justify-center  gap-2">
             {FOOTER_CONTACTS_ITEMS.map((navLink) => (
               <li key={navLink}>
                 <Link href={navLink}>
-                  <p className=" font-semibold capitalize">{navLink}</p>
+                  <p className=" font-semibold hover:text-primary transition-colors capitalize">
+                    {navLink}
+                  </p>
                 </Link>
               </li>
             ))}
@@ -70,29 +76,29 @@ const Footer = () => {
       </div>
 
       <div>
-        <p className="mb-6 text-xl font-semibold capitalize text-gray-400">
+        <p className="mb-6 text-xl font-semibold capitalize text-primary">
           social media
         </p>
         <ul className="mb-2 flex gap-2">
           <li>
             <Link href={""} target="_blank">
-              <FaceBookIcon className="h-8 w-8 fill-white" />
+              <FaceBookIcon className="h-8 w-8 hover:scale-105 transition-transform fill-white" />
             </Link>
           </li>
           <li>
             <Link href={""} target="_blank">
-              <InstagramIcon className="h-8 w-8 fill-white" />
+              <InstagramIcon className="h-8 w-8 hover:scale-105 transition-transform fill-white" />
             </Link>
           </li>
 
           <li>
             <Link href={""} target="_blank">
-              <ThreadIcon className="h-8 w-8 fill-white" />
+              <ThreadIcon className="h-8 w-8 hover:scale-105 transition-transform fill-white" />
             </Link>
           </li>
           <li>
             <Link href={""} target="_blank">
-              <WhatsappIcon className="h-8 w-8 fill-white" />
+              <WhatsappIcon className="h-8 w-8 hover:scale-105 transition-transform fill-white" />
             </Link>
           </li>
         </ul>
@@ -118,7 +124,7 @@ const Footer = () => {
           </MapContainer>
         </div>
         <div className="pt-4">
-          <p className="mb-6 text-xl font-semibold capitalize text-gray-400">
+          <p className="mb-6 text-xl font-semibold capitalize text-primary">
             locations
           </p>
           <p className="font-semibold  ">UAE,Dubai, Production city</p>
