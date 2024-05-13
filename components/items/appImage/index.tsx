@@ -4,6 +4,7 @@ import Atropos from "atropos/react";
 import "atropos/css";
 import { AppImageProps } from "./type";
 import { cn } from "@/lib/utils";
+import Fragment from "../svg";
 const AppImage = ({ src, direction = "normal" }: AppImageProps) => {
   return (
     <Atropos
@@ -20,17 +21,7 @@ const AppImage = ({ src, direction = "normal" }: AppImageProps) => {
           direction == "normal" ? "left-0" : "right-0"
         )}
       >
-        <svg
-          className=" fill-primary h-[70%] "
-          viewBox="0 0 259 377"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          data-atropos-offset="-5"
-        >
-          <g>
-            <path d="M0.875 11.2679L258.875 0V316.841L0.875 377L0.875 11.2679Z"></path>
-          </g>
-        </svg>
+        <Fragment className=" fill-primary h-[70%] " />
       </div>
       <div className="w-full h-full">
         <Image

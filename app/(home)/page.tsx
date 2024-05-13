@@ -1,3 +1,4 @@
+import FoodSection from "@/components/items/homePage/sections/food";
 import MainSection from "@/components/items/homePage/sections/main";
 import MainVideo from "@/components/items/mainVideo";
 import Container from "@/components/ui/container";
@@ -10,6 +11,7 @@ export default function HomePage() {
       <Container>
         <MainSection />
       </Container>
+      <FoodSection />
     </div>
   );
 }

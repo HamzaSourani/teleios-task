@@ -34,36 +34,6 @@
 
     --radius: 0.5rem;
   }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-  }
 }
 
 @layer base {
@@ -75,11 +45,14 @@
   }
 }
 .section-header {
-  @apply uppercase font-syncopate   font-semibold [font-size:1rem] [line-height:1.75rem] sm:[font-size:1.25rem] sm:[line-height:2rem] md:[font-size:1.50rem] md:[line-height:2.5rem] lg:[font-size:1.75rem] lg:[line-height:3rem];
+  @apply uppercase font-syncopate   font-semibold text-xl leading-6 sm:text-2xl sm:leading-7 md:text-3xl md:leading-8 lg:text-4xl lg:leading-10;
 }
 .image-clip {
   clip-path: polygon(1% 91%, 1% 9%, 100% 0, 100% 98%);
 }
 .image-clip-revert {
   clip-path: polygon(0 1%, 98% 6%, 98% 92%, 0% 100%);
+}
+.food-section-clip {
+  clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
 }

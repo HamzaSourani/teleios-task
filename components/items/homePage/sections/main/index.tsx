@@ -18,7 +18,7 @@ const MainSection = () => {
       </p>
       <div className="grid grid-cols-1 items-center md:[grid-template-columns:2.5fr_2fr] gap-8 md:gap-12 lg:gap-16">
         <AppImage src="/assets/images/main-section.jpg" />
-        <div className="flex flex-col  gap-4">
+        <div className="flex flex-col gap-4 md:gap-6">
           <p className="section-header">A WORLD FIRST EXPERIENCE</p>
           <hr className="h-1 w-8 bg-white" />
           <p>
