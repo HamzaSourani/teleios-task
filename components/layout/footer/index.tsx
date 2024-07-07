@@ -1,6 +1,11 @@
 "use client";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { FaceBookIcon, InstagramIcon, ThreadIcon, WhatsappIcon } from "../svg";
+import {
+  FaceBookIcon,
+  InstagramIcon,
+  ThreadIcon,
+  WhatsappIcon,
+} from "@/components/items/svg";
 import Link from "next/link";
 import Image from "next/image";
 import "leaflet/dist/leaflet.css";

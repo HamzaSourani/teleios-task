@@ -14,10 +14,11 @@ const FoodSection = () => {
             <div className="food-section-clip py-12 px-8 bg-background w-[90vw] md:w-[60vw] lg:w-[30vw] ">
               <div className="flex flex-col relative  gap-4 md:gap-6">
                 <div>
-                  <p className="section-header  ">Food</p>
+                  <p className="section-header   ">Food</p>
                   <p className="section-header ">& Drinks</p>
                 </div>
                 <hr className="h-1 w-8 bg-white" />
+
                 <p>
                   A thrilling Teleios racing experience designed to make you
                   feel like a champion. F1 Arcade brings all the excitement,
@@ -26,7 +27,9 @@ const FoodSection = () => {
                   menus and an electric atmosphere creating the perfect social
                   gaming experience.
                 </p>
-                <Button className="self-start">find out more</Button>
+                <Button className="self-start  bg-gradient-primary">
+                  <p className="skew-x-[35deg]  ">find out more</p>
+                </Button>
               </div>
             </div>
           </div>

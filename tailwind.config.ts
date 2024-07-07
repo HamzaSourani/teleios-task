@@ -19,9 +19,12 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "2540px",
+      },
       fontFamily: {
         titillium: ["var(--font-titillium)", ...fontFamily.sans],
-        syncopate: "var(--font-syncopate)",
+        orbitron: ["var(--font-orbitron)", ...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -58,6 +61,14 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+
+      backgroundImage: {
+        "gradient-primary":
+          "linear-gradient(to right,hsl(var(--gradient-color-one)), hsl(var(--gradient-color-two)))",
+        "gradient-darkness":
+          "linear-gradient(to right,black ,transparent 90% )",
+      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

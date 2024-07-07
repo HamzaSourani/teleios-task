@@ -4,16 +4,16 @@
 
 @layer base {
   :root {
-    --background: 239 4% 11%;
+    --background: 256 73% 10%;
     --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 256 46% 27%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
+    --popover: 256 62% 24%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 38 70% 45%;
+    --primary: 285 65% 49%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 256 88% 64%;
@@ -22,17 +22,19 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 38 100% 40.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 256 73% 10%;
+    --accent-foreground: 285 65% 49%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 256 31.8% 70.4%;
+    --input: 256 31.8% 70.4%;
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+    --gradient-color-one: 313 93% 42%;
+    --gradient-color-two: 255 92% 64%;
   }
 }
 
@@ -44,8 +46,15 @@
     @apply bg-background text-foreground;
   }
 }
+
 .section-header {
-  @apply uppercase font-syncopate  text-secondary  font-semibold text-xl leading-6 sm:text-2xl sm:leading-7 md:text-3xl md:leading-8 lg:text-4xl lg:leading-10;
+  @apply font-orbitron text-lg  font-bold  uppercase text-white  md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
+}
+.content-text {
+  @apply text-sm md:text-base xl:text-lg;
+}
+.container {
+  @apply m-auto max-w-screen-3xl px-10 py-10 md:px-20  md:py-16 lg:px-36 lg:py-20 xl:px-56 2xl:px-80;
 }
 .image-clip {
   clip-path: polygon(1% 91%, 1% 9%, 100% 0, 100% 98%);
@@ -55,4 +64,11 @@
 }
 .food-section-clip {
   clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
+}
+.button-gradient {
+  background: linear-gradient(
+    45deg,
+    var(hsl(--primary)),
+    var(hsl(--secondary))
+  );
 }

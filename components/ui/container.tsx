@@ -7,10 +7,7 @@ const Container: FC<PropsWithChildren<HTMLAttributes<HTMLDivElement>>> = ({
   ...props
 }) => {
   return (
-    <div
-      {...props}
-      className={cn("px-10 sm:px-20 md:px-28 lg:px-52", className)}
-    >
+    <div {...props} className={cn("container", className)}>
       {children}
     </div>
   );

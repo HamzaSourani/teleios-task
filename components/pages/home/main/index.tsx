@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import AppImage from "../../../appImage";
+import AppImage from "@/components/items/appImage";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 

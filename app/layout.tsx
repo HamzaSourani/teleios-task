@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Titillium_Web, Syncopate } from "next/font/google";
+import { Titillium_Web, Orbitron } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/items/navbar";
+import NavBar from "@/components/layout/navbar";
 import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
-import Footer from "@/components/items/footer";
+import Footer from "@/components/layout/footer";
 
 const titillium = Titillium_Web({
   weight: ["200", "300", "400", "600", "700", "900"],
@@ -13,10 +13,10 @@ const titillium = Titillium_Web({
   variable: "--font-titillium",
 });
 
-const syncopate = Syncopate({
+const orbitron = Orbitron({
   weight: ["400", "700"],
   subsets: ["latin"],
-  variable: "--font-syncopate",
+  variable: "--font-orbitron",
 });
 export const metadata: Metadata = {
   title: "Teleios Dome",
@@ -32,7 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("font-titillium", titillium.variable, syncopate.variable)}
+        className={cn(
+          "max-w-screen-3xl m-auto font-titillium",
+          titillium.variable,
+          orbitron.variable,
+        )}
       >
         <NavBar />
         <main>{children}</main>
